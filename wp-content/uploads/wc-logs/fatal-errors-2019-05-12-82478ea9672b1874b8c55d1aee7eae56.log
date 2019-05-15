@@ -1,0 +1,12 @@
+2019-05-12T01:17:11+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /var/www/wordpress/wp-content/plugins/wp-crontrol/wp-crontrol.php(68) : eval()'d code on line 23
+
+2019-05-12T14:23:06+00:00 CRITICAL Uncaught Error: Call to undefined function update_stock() in /var/www/wordpress/wp-content/plugins/wp-crontrol/wp-crontrol.php(68) : eval()'d code:62
+Stack trace:
+#0 /var/www/wordpress/wp-content/plugins/wp-crontrol/wp-crontrol.php(68): eval()
+#1 /var/www/wordpress/wp-includes/class-wp-hook.php(288): Crontrol->action_php_cron_event('global $wpdb;\r\n...')
+#2 /var/www/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /var/www/wordpress/wp-includes/plugin.php(531): WP_Hook->do_action(Array)
+#4 /var/www/wordpress/wp-cron.php(133): do_action_ref_array('crontrol_cron_j...', Array)
+#5 {main}
+  thrown in /var/www/wordpress/wp-content/plugins/wp-crontrol/wp-crontrol.php(68) : eval()'d code on line 62
+
